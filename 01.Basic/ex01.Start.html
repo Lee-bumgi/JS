@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    안녕하세요!
+
+    <script>
+        // js주석은 ctrl+/ 혹은 //
+        // body태그 가장 아래쪽에 쓰는걸 '지향'
+        // 1. 출력
+        // 1-1 HTML 문서 내에 출력
+        document.write('<h1>말ㅇ이 안되는데?!</h1>')
+        // 1-2 console 창에 출력
+        console.log('콘솔창에 출력')
+        console.error('에러입니다')
+        console.warn('경고입니다')
+        // 1-3 alert : 팝업창에 출력
+        // alert('pop!')
+        
+        //2. 입력
+        //2-1 입력창을 통한 입력문 prompt(출력질문,입력창에 적혀져있을 값)
+        // 값의 리턴 타입  = 무조건 str
+        let dinner = prompt('오늘 저녁 뭐 드실래요?', '마라탕')
+        console.log(dinner)
+
+        //2-2 확인 출력 질문
+        // 확인-> Ture, 취소 -> False  무조건 boolean 형태로 리턴
+        let dinner2 = confirm('저랑 오늘 저녁드실래용?')
+        console.log(dinner2)
+
+        //3. 변수
+        //3-1 var 키워드
+        // 재선언 재할당 가능
+        var num = 3;
+
+        //3-2 let 키워드
+        // let 은 재선언이 불가능 재할당은 가능
+        let num2 = 1;
+        num2 = 3;
+        //3-3 const 키워드
+        // 재선언 불가능 재할당 불가능
+    </script>
+</body>
+</html>
