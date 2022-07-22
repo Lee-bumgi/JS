@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1.list 라는 배열을 선언한다.
+        // 2.list 라는 배열 안에 1부터 8까지 값을 생성한다.
+        // 3. 홀수 만을 구분해서 출력
+        // 3-1) 홀수를 넣어줄 수 있는 배열을 따로 선언
+        // 3-2) 홀수의 개수를 판단하는 변수를 선언
+        // 출력 : list 안에 들어있는 홀수는 1,3,5,7이며 총 4개다.
+        let list = new Array(1,2,3,4,5,6,7,8)
+        let list2 = new Array()
+        let j=0
+        for (i=0; i< list.length; i++){
+            if (list[i] % 2 == 1){
+                list2[j]=list[i]
+                j++
+            }
+        }
+        console.log(list2+'이고 갯수는'+list2.length+'입니다')
+
+    </script>
+</body>
+</html>

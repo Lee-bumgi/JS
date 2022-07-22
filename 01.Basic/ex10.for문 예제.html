@@ -8,14 +8,13 @@
 </head>
 <body>
     <script>
-        let num = 312
-        let a = num%100
-        let b = num - a
-        console.log('백의 자리 이하 버린 결과>>',b)
-
-
-        // Case2. 형변환 연산자를 이용한 풀이 
-        console.log(parseInt(num/100)*100)
+        let first = parseInt(prompt())
+        let last = parseInt(prompt())
+        let result = 0
+        for (let i = first ; i<= last; i++) {
+            result += i
+        }
+        console.log((first)+'부터' +(last)+'까지의 합은'+(result)+'다')
     </script>
 </body>
 </html>
