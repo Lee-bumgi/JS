@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. 사용자에게 두개의 숫자를 입력받아줌
+        let num1 = Number(prompt('숫자1을 입력하세요'))
+        let num2 = Number(prompt('숫자2을 입력하세요'))
+        
+        function plus(num1,num2){
+            console.log(num1+'와 ' + num2+'의 덧셈은? ' +(num1+num2))
+        }
+        plus(num1,num2)
+
+        function minus(num1,num2){
+            if(num1<num2){
+                return num2-num1
+            } else{
+                return num1-num2
+            }            
+        }
+        console.log(`${num1}와 ${num2}의 뺄셈은? ${minus(num1,num2)}`)        
+
+
+        function multi(num1,num2){
+            return num1*num2
+        }
+        
+        console.log(`${num1}와 ${num2}의 곱셈은? ${multi(num1,num2)}`)
+
+        let div = (num1,num2) =>{
+            if(num1>num2){
+                return num1/num2
+            }else{
+                return num2/num1
+            }
+        }
+        console.log(`${num1}와 ${num2}의 나눗셈은? ${div(num1,num2)}`)
+        
+        //2. console창에 덧셈, 뺄셈, 곱셈, 나눗셈에 대한 결과출력
+        // (3과 2의 덧셈 5)
+        // (3과 2의 뺄셈 1)
+        // (3과 2의 곱셈 6)
+        // (3과 2의 나눗셈 1.5)
+        // 단, 4개의 함수를 만들 것
+        // 만약, 첫번째 숫자가 더 작다면 두번째 숫자 - 첫번째숫자
+
+
+
+        // let a = Number(prompt('숫자1을 입력하세요'))
+        // let b = Number(prompt('숫자2을 입력하세요'))
+
+        // let plus = (a,b) =>{
+        //     return console.log(a + '와' + b +'의 덧셈 :' ,a+b)
+        // }
+        // let minus = (a,b) =>{
+        //     if (a-b<0){
+        //         return console.log(a + '와' + b +'의 뺄셈 :' ,a-b)
+        //     }
+        //     else{
+        //         return console.log(a + '와' + b +'의 뺄셈 :' ,a-b)
+        //     }
+        // }
+        // let multi = (a,b) =>{
+        //     return console.log(a + '와' + b +'의 곱셈 :' ,a*b)
+        // }
+        // // 위에 div가 let으로 선언되어있어서 재선언이 되지 않는다.
+        // // 위에 나머지들은 function으로 정의되어있어서 괜찮다.
+        // let div2 = (a,b) =>{
+        //     return console.log(a + '와' + b +'의 나눗셈 :' ,a/b)
+        // }
+        // console.log(plus(3,2))
+        // console.log(minus(3,2))
+        // console.log(multi(3,2))
+        // console.log(div2(3,2))
+    </script>
+</body>
+</html>
