@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        #redBox{
+            background-color: red;
+        }
+        #blueBox{
+            background-color: blue;
+        }
+        #greenBox{
+            background-color: green;
+        }
+        #grayBox{
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="redBox"></div>
+    <div id="blueBox"></div>
+    <div id="greenBox"></div>
+    <div id="grayBox"></div>
+    <button onclick="margin()">이동하기!</button>
+    <button onclick="radius()">둥글게!</button>
+
+    <script>
+        // ver2.TagName 을 이용
+
+        // 1. margin이라는 함수 생성
+        // 1-1 div 두번째 상자는 100px, 세번째 상자는 200px, 네번째 상자는 300px
+        //      만큼 margin-left를 줄 것!
+        let div = document.getElementsByTagName('div')
+        let margin = ()=>{
+            for(let i=0; i< div.length; i++) {
+                div[i].style.marginLeft = `${(100*i)}px`
+                
+                console.log(i)
+            }
+        }
+
+        //2. radius 라는 함수를 생성
+        // 2-1 border-top-right-radius => 50%
+        // 2-1 border-bottom-left-radius => 50%
+        
+        let radius = ()=>{
+            for(let i=0; i< div.length; i++) {
+                div[i].style.borderTopRightRadius = '50%'
+                div[i].style.borderBottomLeftRadius = '50%'
+                
+                console.log(i)
+            }
+        }
+        // JS영역에서 CSS속성을 적고 싶다면
+    </script>
+</body>
+</html>

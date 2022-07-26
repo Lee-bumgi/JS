@@ -13,7 +13,16 @@
     <script>
         let innerFunc = ()=>{
             let pTag = document.getElementById('text')
-            console.log(pTag)
+            // 요소 = 태그 + 컨텐츠
+
+            // 요소 안의 내용만 수정 or 접근? .innerText
+            // (1) 접근
+            console.log(pTag.innerText)
+            // (2)
+            // pTag.innerText = '<h1>수정완료!</h1>'
+            
+            // 태그까지 적용하고 싶을 때는? .innerHTML
+            pTag.innerHTML = "<h1>수정완료!</h1>"
         }
     </script>
 </body>

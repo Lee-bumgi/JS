@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="https://i.ytimg.com/vi/BVEax12-L4g/maxresdefault.jpg"
+    width = "300px"
+    id = "img1"
+>
+    <button onclick="ch()">이미지 변경!</button>
+
+    <script>
+        let img = document.getElementById('img1')
+        let ch =()=> {
+            //속성의 값을 변경?
+            // Element.속성이름 = '속성값'
+            //img.src = "https://pbs.twimg.com/media/FEpJcpSUcAI57rs.jpg:large"
+            if (img.src == "https://pbs.twimg.com/media/FEpJcpSUcAI57rs.jpg:large"){
+                img.src = "https://i.ytimg.com/vi/BVEax12-L4g/maxresdefault.jpg"
+            }else if (img.src == "https://i.ytimg.com/vi/BVEax12-L4g/maxresdefault.jpg"){
+                img.src = "https://pbs.twimg.com/media/FEpJcpSUcAI57rs.jpg:large"           
+            }
+        }
+    </script>
+</body>
+</html>

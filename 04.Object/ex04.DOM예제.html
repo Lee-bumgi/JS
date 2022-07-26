@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <span id="span1">0</span>
+    <br>
+    <button onclick="plus()">+1 증가</button>
+    <button onclick="minus()">-1 감소</button>
+
+    <script>
+        // 1. plus 함수 생성
+        // 1-1. 아이디가 span1인 span 태그의 요소를
+        //      JS의 영역으로 가지고 올것
+        // 1-2. 요소 안의 텍스트만 1씩 증가
+        // ** 단, 현재 0이라는 글자는 string형이다.
+        
+        // let a = 0
+        // let plus = ()=>{
+        //     let pTag = document.getElementById("span1")
+        //     a = parseInt(pTag.innerText)
+        //     a ++
+        //     pTag.innerText = a
+        //     console.log(a)
+        // }
+
+        // 2. minus 함수 생성
+        // 2-1. 아이디가 span1인 span 태그의 요소를
+        //      JS의 영역으로 가지고 올것
+        // 2-2. 요소 안의 텍스트만 1씩 감소
+        // 2-3. 0밑으로는 더이상 감소 X
+
+        // let minus = ()=>{
+        //     let pTag = document.getElementById("span1")
+        //     a = parseInt(pTag.innerText)
+        //     a--
+            
+        //     if (a>=0){
+        //         pTag.innerText = a
+        //         console.log(a)
+        //     } else{
+        //         pTag.innerText = 0
+        //         console.log(a)
+        //     }
+        // }
+        
+        // 결과창 3을 띄운 모습을 캡쳐해서 단톡방
+        let span = document.getElementById('span1')
+
+        function plus(){
+            console.log('plus 함수')
+            let spanNum = Number(span.innerText)
+            span.innerText = spanNum + 1
+        }
+        function minus(){
+            let spanNum = Number(span.innerText)
+            if(spanNum >0){
+                span.innerText = spanNum - 1
+            }
+
+        }
+    </script>
+</body>
+</html>
